@@ -17,15 +17,19 @@ export default function BottomNav({ onOpenLogModal }) {
     <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-border-color z-40 pb-[env(safe-area-inset-bottom)]">
       <div className="flex justify-between items-center h-16 max-w-md mx-auto relative px-2">
         
-        {/* Dashboard */}
-        <NavItem item={navItems[0]} isActive={pathname === navItems[0].href} />
+        {/* Left Side Nav */}
+        <div className="flex flex-1 h-full">
+          <NavItem item={navItems[0]} isActive={pathname === navItems[0].href} />
+        </div>
         
         {/* Spacer for FAB */}
         <div className="w-20 flex-shrink-0" />
         
-        {/* History & Stats */}
-        <NavItem item={navItems[1]} isActive={pathname === navItems[1].href} />
-        <NavItem item={navItems[2]} isActive={pathname === navItems[2].href} />
+        {/* Right Side Nav */}
+        <div className="flex flex-1 h-full">
+          <NavItem item={navItems[1]} isActive={pathname === navItems[1].href} />
+          <NavItem item={navItems[2]} isActive={pathname === navItems[2].href} />
+        </div>
 
         {/* Floating Action Button (FAB) */}
         <div className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-1/3">
