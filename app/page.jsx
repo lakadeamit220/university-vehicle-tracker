@@ -91,6 +91,7 @@ export default function Dashboard() {
           />
         ) : (
           <div>
+            <TimeSlotGroup title="Full Day" entries={filteredEntries} onEdit={handleOpenEdit} />
             <TimeSlotGroup title="Morning" entries={groupedEntries.Morning} onEdit={handleOpenEdit} />
             <TimeSlotGroup title="Afternoon" entries={groupedEntries.Afternoon} onEdit={handleOpenEdit} />
             <TimeSlotGroup title="Evening" entries={groupedEntries.Evening} onEdit={handleOpenEdit} />

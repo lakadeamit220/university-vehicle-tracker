@@ -6,7 +6,8 @@ A mobile-first Progressive Web App (PWA) designed for university gate staff to q
 
 - **Quick Logging:** Fast vehicle entry form with auto-uppercase license plates and categorical tagging (Vehicle Type, Purpose).
 - **Gate Tagging:** Support for multiple gates (Gate 1, Gate 2, Main Gate).
-- **Time Slots:** Automatically groups daily logs into Morning, Afternoon, and Evening slots.
+- **Full Day & Time Slots:** View all vehicles in a unified 'Full Day' list, or neatly categorized into Morning, Afternoon, and Evening slots.
+- **Automatic Log Locking:** Logs from previous days are automatically locked (strikethrough and read-only) to maintain data integrity.
 - **Live Dashboard:** Daily summary cards (Total, Cars, 2-Wheelers, Visitors) and real-time search.
 - **History & Export:** Full historical log view with the ability to export data to CSV.
 - **Data Visualization:** Built-in charts (Bar and Pie) to analyze 7-day traffic trends and daily vehicle distributions.

@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { ChevronDown, ChevronUp, Sun, Sunset, Moon } from "lucide-react";
+import { ChevronDown, ChevronUp, Sun, Sunset, Moon, LayoutList } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import VehicleCard from "./VehicleCard";
 
 const icons = {
+  "Full Day": <LayoutList className="w-5 h-5 text-blue-500" />,
   Morning: <Sun className="w-5 h-5 text-amber-500" />,
   Afternoon: <Sunset className="w-5 h-5 text-orange-500" />,
   Evening: <Moon className="w-5 h-5 text-indigo-500" />
