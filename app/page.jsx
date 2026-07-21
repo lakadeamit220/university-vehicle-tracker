@@ -11,7 +11,8 @@ import Modal from "@/components/ui/Modal";
 import { useVehicleStore } from "@/store/vehicleStore";
 import { useStoreHydration } from "@/hooks/useStoreHydration";
 import { groupByTimeSlot } from "@/lib/dateUtils";
-import { Search, Inbox } from "lucide-react";
+import { Search } from "lucide-react";
+import EmptyState from "@/components/ui/EmptyState";
 
 export default function Dashboard() {
   const isHydrated = useStoreHydration();
@@ -84,15 +85,10 @@ export default function Dashboard() {
 
         {/* Entry List */}
         {filteredEntries.length === 0 ? (
-          <div className="flex flex-col items-center justify-center py-16 text-muted">
-            <Inbox className="w-12 h-12 mb-3 opacity-20" />
-            <p className="font-medium text-foreground">No vehicles found</p>
-            <p className="text-sm mt-1 text-center">
-              {searchQuery 
-                ? "Try a different search term" 
-                : "Tap the + button to log a vehicle"}
-            </p>
-          </div>
+          <EmptyState 
+            title="No vehicles found" 
+            message={searchQuery ? "Try a different search term" : "Tap the + button to log a vehicle"} 
+          />
         ) : (
           <div>
             <TimeSlotGroup title="Morning" entries={groupedEntries.Morning} onEdit={handleOpenEdit} />
