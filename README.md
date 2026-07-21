@@ -1,4 +1,4 @@
-# 🚘 University Vehicle Tracker
+# University Vehicle Tracker
 
 ![Live Demo](https://img.shields.io/badge/Live_Demo-Vercel-black?style=for-the-badge&logo=vercel)
 ![Next.js](https://img.shields.io/badge/Next.js_15-black?style=for-the-badge&logo=next.js)
@@ -10,7 +10,7 @@ A blazing-fast, mobile-first Progressive Web App (PWA) designed to replace physi
 
 ---
 
-## 📖 The Problem vs. The Solution
+## The Problem vs. The Solution
 
 **The Problem:** Traditional security gates use large physical paper registers. These are slow to write in, prone to human error, impossible to search quickly, and provide zero analytical insights to administration (e.g., peak hours, visitor volume).
 
@@ -18,19 +18,19 @@ A blazing-fast, mobile-first Progressive Web App (PWA) designed to replace physi
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-- **⚡ Lightning Fast Logging:** Optimized entry form forces uppercase license plates and uses smart defaults (Vehicle Type, Purpose) to get cars through the gate faster.
-- **📱 PWA (Progressive Web App):** Installable directly to iOS/Android home screens. It behaves exactly like a native app (no browser bars, fullscreen).
-- **🔒 Automatic Data Integrity:** Logs from previous days are automatically "locked" (read-only with strikethrough text) preventing accidental historical modifications.
-- **📊 Live Dashboard & Analytics:** Real-time daily summary cards, plus a dedicated Stats page with Recharts (Bar/Pie charts) to analyze 7-day traffic trends.
-- **📅 Smart Time Grouping:** Automatically groups daily logs into Full Day, Morning, Afternoon, and Evening slots based on the entry timestamp.
-- **💾 Offline-Ready Architecture:** Built on Zustand with LocalStorage persistence. No slow database calls—everything is saved instantly to the device.
-- **📥 CSV Export:** Full historical log view with a 1-click export to Excel-ready CSV via PapaParse.
+- **Lightning Fast Logging:** Optimized entry form forces uppercase license plates and uses smart defaults (Vehicle Type, Purpose) to get cars through the gate faster.
+- **PWA (Progressive Web App):** Installable directly to iOS/Android home screens. It behaves exactly like a native app (no browser bars, fullscreen).
+- **Automatic Data Integrity:** Logs from previous days are automatically "locked" (read-only with strikethrough text) preventing accidental historical modifications.
+- **Live Dashboard & Analytics:** Real-time daily summary cards, plus a dedicated Stats page with Recharts (Bar/Pie charts) to analyze 7-day traffic trends.
+- **Smart Time Grouping:** Automatically groups daily logs into Full Day, Morning, Afternoon, and Evening slots based on the entry timestamp.
+- **Offline-Ready Architecture:** Built on Zustand with LocalStorage persistence. No slow database calls—everything is saved instantly to the device.
+- **CSV Export:** Full historical log view with a 1-click export to Excel-ready CSV via PapaParse.
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 - **Framework:** Next.js 15 (App Router)
 - **Styling:** Tailwind CSS v4
@@ -43,9 +43,9 @@ A blazing-fast, mobile-first Progressive Web App (PWA) designed to replace physi
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
-Want to run this project on your own machine? It takes less than 2 minutes!
+Want to run this project on your own machine? It takes less than 2 minutes.
 
 ### Prerequisites
 Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
@@ -71,11 +71,11 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 4. **View the app:**
    Open your browser and navigate to [http://localhost:3000](http://localhost:3000). 
    
-   > **Pro Tip:** To get the full intended experience, open Chrome DevTools (`F12`), click the "Toggle Device Toolbar" icon (`Ctrl+Shift+M`), and view the app in mobile dimensions (e.g., iPhone 12 Pro)!
+   > **Pro Tip:** To get the full intended experience, open Chrome DevTools (`F12`), click the "Toggle Device Toolbar" icon (`Ctrl+Shift+M`), and view the app in mobile dimensions.
 
 ---
 
-## 📱 How to Use the App
+## How to Use the App
 
 1. **Change Gates:** Use the dropdown in the top right corner to select which gate you are operating (Gate 1, Gate 2, Main Gate).
 2. **Log a Vehicle:** Tap the large blue `+` button at the bottom center of the screen to open the logging form. Fill out the license plate (it auto-capitalizes) and hit Save.
@@ -85,7 +85,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
 ---
 
-## ☁️ Deployment
+## Deployment
 
 This application is fully optimized for zero-config deployment on **Vercel**.
 
@@ -94,4 +94,4 @@ This application is fully optimized for zero-config deployment on **Vercel**.
 3. Import your GitHub repository.
 4. Leave all default settings (Vercel automatically detects Next.js) and click **Deploy**.
 
-Within seconds, you will have a live, globally distributed PWA! No environment variables or database setups are required.
+Within seconds, you will have a live, globally distributed PWA. No environment variables or database setups are required.
